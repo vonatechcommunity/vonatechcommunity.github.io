@@ -48,6 +48,16 @@ $green:   #2dce89 !default;
 $teal:    #11cdef !default;
 $cyan:    #2bffc6 !default;
 
+// Vona Tech Community brand colors
+$vtc-primary: #37258E !default;
+$vtc-accent: #F7DEF1 !default;
+$vtc-basic: #DBE7ED !default;
+$vtc-dark: #1C1C1C !default;
+// Vona Tech Community custom colors, based on brand colors
+$vtc-default: #282050 !default;
+$vtc-light-violet: #abaed1 !default;
+$vtc-info: #9772be !default;
+
 $colors: () !default;
 $colors: map-merge((
   "blue":       $blue,
@@ -67,11 +77,11 @@ $colors: map-merge((
   "gray-dark":  $gray-800
 ), $colors);
 
-$default:       #172b4d !default;
-$primary:       #5e72e4 !default;
+$default:       $vtc-default !default;
+$primary:       $vtc-primary !default;
 $secondary:     #f4f5f7 !default;
-$success:       $green !default;
-$info:          $teal !default;
+$success:       $vtc-accent !default;
+$info:          $vtc-info !default;
 $warning:       $orange !default;
 $danger:        $red !default;
 $light:         $gray-500 !default;
