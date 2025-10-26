@@ -1,5 +1,5 @@
 // Import stories data
-import { stories } from './stories.js';
+import { stories } from '../../db/stories.js';
 
 // Function to populate a story component with data
 function populateStory(component, storyData) {
@@ -104,11 +104,7 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-pagination',
     clickable: true
   },
-  // comment it for now
-  // navigation: {
-  //   nextEl: '.swiper-button-next',
-  //   prevEl: '.swiper-button-prev'
-  // },
+
   breakpoints: {
     0: { slidesPerView: 1 },
     768: { slidesPerView: 2 },
