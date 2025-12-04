@@ -3,6 +3,7 @@ import { stories } from '../../db/stories.js';
 
 // Function to populate a story component with data
 function populateStory(component, storyData) {
+  component.href = `/feedback`;
   const photo = component.querySelector('.story-author-photo');
   const author = component.querySelector('.story-author');
   const text = component.querySelector('.story-text');
@@ -33,10 +34,6 @@ function populateStory(component, storyData) {
   // Handle story text
   if (text) {
     text.textContent = `"${storyData.text}"`;
-    // Tooltip/title with full text (no height change)
-    text.setAttribute('title', storyData.text);
-    text.setAttribute('data-bs-toggle', 'tooltip');
-    text.setAttribute('data-bs-placement', 'top');
   }
 }
 

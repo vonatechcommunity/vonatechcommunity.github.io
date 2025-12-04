@@ -79,10 +79,33 @@
             <ul class="navbar-nav navbar-nav-hover align-items-lg-center ml-lg-auto">
               
                 
-                  <li class="nav-item">
-                    <a href="/about" class="nav-link">
-                      <span class="nav-link-inner--text">Про нас</span>
+                  <li class="nav-item dropdown">
+                    <a href="javascript:;" class="nav-link" data-toggle="dropdown" role="button">
+                      <span class="nav-link-inner--text">Vona Tech Community</span>
                     </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      
+                      <a class="dropdown-item" href="/about">
+                        <i class="ni "></i>
+                        Про спільноту
+                      </a>
+                      
+                      <a class="dropdown-item" href="/join">
+                        <i class="ni "></i>
+                        Доєднатися
+                      </a>
+                      
+                      <a class="dropdown-item" href="/partner">
+                        <i class="ni "></i>
+                        Запартнеритися
+                      </a>
+                      
+                      <a class="dropdown-item" href="/contact">
+                        <i class="ni "></i>
+                        Контакти
+                      </a>
+                      
+                    </div>
                   </li>
                 
               
@@ -96,16 +119,53 @@
               
                 
                   <li class="nav-item">
-                    <a href="/feedback" class="nav-link">
-                      <span class="nav-link-inner--text">Відгуки</span>
+                    <a href="/blog" class="nav-link">
+                      <span class="nav-link-inner--text">Читати</span>
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item dropdown">
+                    <a href="javascript:;" class="nav-link" data-toggle="dropdown" role="button">
+                      <span class="nav-link-inner--text">Проєкти</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      
+                      <a class="dropdown-item" href="/mentoring-program">
+                        <i class="ni "></i>
+                        Менторська програма
+                      </a>
+                      
+                      <a class="dropdown-item" href="/english-speaking-club">
+                        <i class="ni "></i>
+                        English Speaking Club
+                      </a>
+                      
+                    </div>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a href="/events" class="nav-link">
+                      <span class="nav-link-inner--text">Події</span>
                     </a>
                   </li>
                 
               
                 
                   <li class="nav-item">
-                    <a href="/contact" class="nav-link">
-                      <span class="nav-link-inner--text">Контакти</span>
+                    <a href="https://vonatechshop.fatline.biz" class="nav-link">
+                      <span class="nav-link-inner--text">Мерч</span>
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item">
+                    <a href="/feedback" class="nav-link">
+                      <span class="nav-link-inner--text">Відгуки</span>
                     </a>
                   </li>
                 
@@ -261,6 +321,7 @@
 
 
   
+  
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -287,7 +348,7 @@
   <!-- Hidden pool of components -->
 <div id="stories-pool" class="hidden-container">
     <div class="text-center bg-primary text-white">
-        <div class="card shadow border-0 story-card">
+        <a class="card shadow border-0 story-card">
     <div class="card-body text-center">
       <!-- Story -->
       <p class="mb-4 story-text">
@@ -305,10 +366,10 @@
       </div>
 
     </div>
-  </div> 
+</a> 
     </div>
     <div class="text-center bg-default text-white">
-        <div class="card shadow border-0 story-card">
+        <a class="card shadow border-0 story-card">
     <div class="card-body text-center">
       <!-- Story -->
       <p class="mb-4 story-text">
@@ -326,10 +387,10 @@
       </div>
 
     </div>
-  </div> 
+</a> 
     </div>
     <div class="text-center bg-primary text-white">
-        <div class="card shadow border-0 story-card">
+        <a class="card shadow border-0 story-card">
     <div class="card-body text-center">
       <!-- Story -->
       <p class="mb-4 story-text">
@@ -347,10 +408,10 @@
       </div>
 
     </div>
-  </div> 
+</a> 
     </div>
     <div class="text-center bg-default text-dark">
-        <div class="card shadow border-0 story-card">
+        <a class="card shadow border-0 story-card">
     <div class="card-body text-center">
       <!-- Story -->
       <p class="mb-4 story-text">
@@ -368,10 +429,10 @@
       </div>
 
     </div>
-  </div> 
+</a> 
     </div>
     <div class="text-center bg-primary text-white">
-        <div class="card shadow border-0 story-card">
+        <a class="card shadow border-0 story-card">
     <div class="card-body text-center">
       <!-- Story -->
       <p class="mb-4 story-text">
@@ -389,10 +450,10 @@
       </div>
 
     </div>
-  </div> 
+</a> 
     </div>
     <div class="text-center bg-default text-white">
-        <div class="card shadow border-0 story-card">
+        <a class="card shadow border-0 story-card">
     <div class="card-body text-center">
       <!-- Story -->
       <p class="mb-4 story-text">
@@ -410,13 +471,14 @@
       </div>
 
     </div>
-  </div> 
+</a> 
     </div>
 </div>
 
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script type="module" src="/assets/js/custom/stories-slider.js"></script>  
+<script type="module" src="/assets/js/custom/stories-slider.js"></script> 
+  
   <footer class="footer mt-5 pt-4">
   <div class="container">
     <div class="row row-grid align-items-center mb-2 mt-2">
@@ -521,11 +583,7 @@
         <ul class="nav nav-footer justify-content-end">
           
           
-          <li class="nav-item">
-            <a href="/about" class="nav-link">
-              <span class="nav-link-inner--text">Про нас</span>
-            </a>
-          </li>
+
           
           
           
@@ -538,16 +596,36 @@
           
           
           <li class="nav-item">
-            <a href="/feedback" class="nav-link">
-              <span class="nav-link-inner--text">Відгуки</span>
+            <a href="/blog" class="nav-link">
+              <span class="nav-link-inner--text">Читати</span>
+            </a>
+          </li>
+          
+          
+          
+
+          
+          
+          
+          <li class="nav-item">
+            <a href="/events" class="nav-link">
+              <span class="nav-link-inner--text">Події</span>
             </a>
           </li>
           
           
           
           <li class="nav-item">
-            <a href="/contact" class="nav-link">
-              <span class="nav-link-inner--text">Контакти</span>
+            <a href="https://vonatechshop.fatline.biz" class="nav-link">
+              <span class="nav-link-inner--text">Мерч</span>
+            </a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a href="/feedback" class="nav-link">
+              <span class="nav-link-inner--text">Відгуки</span>
             </a>
           </li>
           
