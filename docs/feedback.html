@@ -81,13 +81,18 @@
                 
                   <li class="nav-item dropdown">
                     <a href="javascript:;" class="nav-link" data-toggle="dropdown" role="button">
-                      <span class="nav-link-inner--text">Vona Tech Community</span>
+                      <span class="nav-link-inner--text">Про Vona Tech</span>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                       
                       <a class="dropdown-item" href="/about">
                         <i class="ni "></i>
-                        Про спільноту
+                        Дізнатися більше про спільноту
+                      </a>
+                      
+                      <a class="dropdown-item" href="/team">
+                        <i class="ni "></i>
+                        Познайомитися з командою
                       </a>
                       
                       <a class="dropdown-item" href="/join">
@@ -194,24 +199,37 @@
     <div id="main" class="container">
       <hr />
 <div class="testimonials-1 fullWidth" style="background-image: url('/assets/img/ill/testimonial_bg.svg');">
-    <div class="container">
-      <!-- Static feedback blocks container -->
-      <div id="feedback-blocks">
-        <!-- Dynamic feedback blocks will be populated by feedback-static.js -->
+  <div class="container">
+    <!-- Static feedback blocks container -->
+    <div id="feedback-blocks">
+      <!-- Initial skeleton while feedback list is populated via JS -->
+      <div class="py-5" id="feedback-loader">
+        <div class="row align-items-start">
+          <div class="col-md-7 mb-4 mb-md-0">
+            <div class="feedback-skeleton feedback-skeleton-title mb-3"></div>
+            <div class="feedback-skeleton feedback-skeleton-subtitle mb-3"></div>
+            <div class="feedback-skeleton feedback-skeleton-text"></div>
+          </div>
+          <div class="col-md-5">
+            <div class="feedback-skeleton feedback-skeleton-image ml-md-auto"></div>
+          </div>
+        </div>
       </div>
-      
-      <!-- Pagination -->
-      <nav aria-label="Testimonials pagination" class="mt-5">
-        <ul class="pagination justify-content-center">
-          <!-- Dynamic pagination will be populated by feedback-static.js -->
-        </ul>
-      </nav>
     </div>
+    
+    <!-- Pagination -->
+    <nav aria-label="Testimonials pagination" class="mt-5">
+      <ul class="pagination justify-content-center">
+        <!-- Dynamic pagination will be populated by feedback.js -->
+      </ul>
+    </nav>
   </div>
+</div>
 
-<p><!-- Load the feedback static script -->
-  <script type="module" src="/assets/js/custom/feedback-static.js"></script>
-—</p>
+<!-- Load the feedback static script -->
+<script type="module" src="/assets/js/custom/feedback.js"></script>
+
+<hr />
 
     </div>
   </div>
@@ -317,7 +335,7 @@
 
       </div>
     </div>
-    <hr>
+    <hr class="hr-width-100">
     <div class="row row-grid align-items-right">
         <ul class="nav nav-footer justify-content-end">
           

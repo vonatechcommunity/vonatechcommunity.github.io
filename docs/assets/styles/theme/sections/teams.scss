@@ -84,6 +84,49 @@
       font-size: 14px;
     }
   }
+
+  &.team-vona {
+    .card-profile {
+      overflow: hidden;
+      height: calc(100% - 30px);
+
+      .card-header {
+        height: 100%;
+        max-height: 350px;
+        margin-bottom: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      .card-image {
+        img {
+          width: 100%;
+          object-fit: cover;
+          object-position: top;
+        }
+
+        &:hover .team-linkedin {
+          opacity: 1;
+        }
+      }
+    }
+
+    .team-linkedin {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      z-index: 2;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    
+      width: 36px;
+      height: 36px;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 }
 
 
@@ -145,5 +188,11 @@
   .card-footer {
     border-top: none;
   }
-
 }
+
+
+
+
+
+
+
